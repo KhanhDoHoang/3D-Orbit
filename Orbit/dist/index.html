@@ -12,9 +12,13 @@
     <div id="info">
         orbit controls
     </div>
+
+    <script src="../build/three.min.js"></script>
+    <script src="../examples/js/renderers/Projector.js"></script>
+    <script src="../threex.domevents.js"></script>
     <script type="module">
         import * as THREE from '../build/three.module.js';
-
+        //import * as THREEX from '../build/threex.domevents.js';
         import {
             OrbitControls
         } from './jsm/controls/OrbitControls.js';
@@ -64,11 +68,15 @@
 
         camera.position.z = 50;
 
+        var domEvents = new THREEx.DomEvents(camera, renderer.domElement)
+
 
         controls = new OrbitControls(camera, renderer.domElement);
 
         controls.minDistance = 1;
         controls.maxDistance = 1000;
+
+
 
 
         function animate() {
@@ -81,7 +89,7 @@
             sphere3.rotation.x += 0.03;
             sphere3.rotation.y += 0.03;
 
-            //   controls.update();
+            controls.update();
             render();
             // renderer.render(scene, camera);
         };
