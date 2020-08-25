@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.MapControls = exports.OrbitControls = void 0;
 
-var _threeModule = require("../../../build/three.module.js");
+var _threeModule = require("../../vendor/three.js/build/three.module.js");
 
 // This set of controls performs orbiting, dollying (zooming), and panning.
 // Unlike TrackballControls, it maintains the "up" direction object.up (+Y by default).
