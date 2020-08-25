@@ -1,0 +1,19 @@
+{
+  "name": "3d-orbit",
+  "version": "1.0.0",
+  "description": "3D Orbit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KhanhDoHoang/3D-Orbit.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KhanhDoHoang/3D-Orbit/issues"
+  },
+  "homepage": "https://github.com/KhanhDoHoang/3D-Orbit#readme"
+}
